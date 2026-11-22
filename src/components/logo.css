@@ -1,0 +1,9 @@
+/* ---------- logo ---------- */
+.logo { position: relative; display: block; width: calc(160 * var(--px)); height: calc(96.7 * var(--px)); }
+.lm { position: absolute; left: 0; top: 0; width: calc(78.711 * var(--px)); height: calc(78.092 * var(--px)); }
+.lt {
+  position: absolute; left: calc(58.09 * var(--px)); top: calc(10.7 * var(--px));
+  font: 400 calc(72.878 * var(--px)) / calc(85.739 * var(--px)) 'Belanosima', sans-serif;
+  letter-spacing: calc(-1.9827 * var(--px)); color: var(--ink); text-transform: lowercase; white-space: nowrap;
+}
+.ld { position: absolute; left: calc(154.85 * var(--px)); top: calc(69 * var(--px)); width: calc(5.155 * var(--px)); height: calc(7.138 * var(--px)); }

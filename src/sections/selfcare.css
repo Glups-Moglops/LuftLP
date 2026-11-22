@@ -1,0 +1,11 @@
+/* ---------- self care ---------- */
+.selfcare .stage { --sw: 393; --sh: 780; }
+.sc { font: 600 calc(40 * var(--px)) / calc(46 * var(--px)) 'Belanosima', sans-serif; white-space: nowrap; }
+.sc.navy { color: var(--navy); }
+.sc.lite { color: var(--chip); }
+.ph img { filter: drop-shadow(0 calc(30 * var(--px)) calc(40 * var(--px)) rgba(0, 51, 89, 0.28)); }
+@media (min-width: 1100px) {
+  .selfcare .stage { --sw: 1920; --sh: 1270; }
+  .sc { font-size: calc(136 * var(--px)); line-height: calc(150 * var(--px)); }
+  .sc.l { text-align: right; }
+}

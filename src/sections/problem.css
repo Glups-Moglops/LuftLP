@@ -1,0 +1,50 @@
+/* ---------- problem ---------- */
+.problem { padding: calc(40 * var(--px)) 0 calc(48 * var(--px)); }
+.p-head { text-align: center; padding-inline: calc(20 * var(--px)); }
+.p-head h2 { font-size: calc(34 * var(--px)); line-height: calc(38 * var(--px)); }
+.p-head p { margin-top: calc(24 * var(--px)); font-size: calc(16 * var(--px)); line-height: calc(24 * var(--px)); }
+
+.stats { margin-top: calc(24 * var(--px)); }
+.card { position: relative; width: calc(280 * var(--px)); height: calc(356 * var(--px)); border-radius: calc(36 * var(--px)); overflow: hidden; padding: calc(20 * var(--px)) calc(22 * var(--px)) calc(22 * var(--px)); display: flex; flex-direction: column; gap: calc(14 * var(--px)); }
+.card .big { font: 600 calc(100 * var(--px)) / 1 'Belanosima', sans-serif; font-variant-numeric: tabular-nums; }
+.card .copy { display: flex; flex-direction: column; gap: calc(18 * var(--px)); }
+.card .copy p { font-weight: 500; font-size: calc(18 * var(--px)); line-height: calc(25 * var(--px)); }
+.card small { font-size: calc(12 * var(--px)); line-height: calc(17 * var(--px)); }
+.card.navy { background: var(--navy); color: #fff; }
+.card.navy small { color: var(--chip); }
+.card.sky { background: linear-gradient(180deg, var(--chip), #fff); border: 2px solid var(--chip); }
+.card.sky small { color: var(--accent); }
+.pill-photo { overflow: hidden; border-radius: 100px; aspect-ratio: 236 / 76; margin-top: auto; }
+.pill-photo img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
+.card:hover .pill-photo img { transform: scale(1.12); }
+.card.storm { padding: 0; }
+.card.storm .cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 1.6s var(--ease); }
+.card.storm:hover .cover { transform: scale(1.08); }
+.card.storm .umb { position: absolute; left: 50%; top: 50%; width: calc(151.5 * var(--px)); height: calc(150.3 * var(--px)); translate: -50% -50%; animation: sway 8s ease-in-out infinite; }
+@media (min-width: 1100px) {
+  .problem { padding: calc(130 * var(--px)) calc(160 * var(--px)) calc(150 * var(--px)); }
+  .p-head { padding: 0; }
+  .p-head h2 { font-size: calc(80 * var(--px)); line-height: calc(86 * var(--px)); }
+  .p-head p { max-width: calc(1120 * var(--px)); margin: calc(56 * var(--px)) auto 0; font-size: calc(28 * var(--px)); line-height: calc(42 * var(--px)); }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: calc(32 * var(--px)); padding: calc(24 * var(--px)) 0 0; margin-top: calc(56 * var(--px)); overflow: visible; }
+  .card { width: auto; height: calc(580 * var(--px)); border-radius: calc(44 * var(--px)); padding: calc(36 * var(--px)) calc(52 * var(--px)) calc(52 * var(--px)); gap: 0; justify-content: space-between; }
+  .card .big { font-size: calc(210 * var(--px)); }
+  .card .copy p { font-size: calc(28 * var(--px)); line-height: calc(38 * var(--px)); max-width: calc(433 * var(--px)); }
+  .card small { font-size: calc(16 * var(--px)); line-height: calc(22 * var(--px)); }
+  .pill-photo { margin-top: 0; aspect-ratio: auto; height: calc(109 * var(--px)); }
+  .card.storm .umb { width: calc(202 * var(--px)); height: calc(200.4 * var(--px)); }
+}
+
+.statement { margin-top: calc(24 * var(--px)); padding-top: calc(8 * var(--px)); text-align: center; padding-inline: calc(20 * var(--px)); }
+.st { font: 600 calc(24 * var(--px)) / calc(38 * var(--px)) 'Belanosima', sans-serif; }
+.st-close { margin-top: 0; font-size: calc(16 * var(--px)); line-height: calc(24 * var(--px)); }
+.st-close .b { font-weight: 400; }
+.pill-img { display: inline-block; vertical-align: middle; width: calc(66 * var(--px)); height: calc(30 * var(--px)); margin: 0 calc(6 * var(--px)); border-radius: 100px; overflow: hidden; transform-origin: center; }
+.pill-img img { width: 100%; height: 100%; object-fit: cover; }
+@media (min-width: 1100px) {
+  .statement { margin-top: calc(80 * var(--px)); padding: calc(35 * var(--px)) 0 0; }
+  .st { font-size: calc(56 * var(--px)); line-height: calc(78 * var(--px)); }
+  .st-close { margin-top: calc(65 * var(--px)); font-size: calc(28 * var(--px)); line-height: calc(54 * var(--px)); }
+  .st-close .b { font-weight: 700; }
+  .pill-img { width: calc(150 * var(--px)); height: calc(68 * var(--px)); margin: calc(-10 * var(--px)) calc(10 * var(--px)); }
+}

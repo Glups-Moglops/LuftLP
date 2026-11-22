@@ -1,0 +1,20 @@
+@keyframes bob {
+  0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(var(--r, 0deg)); }
+  50% { transform: translate(-50%, -50%) translateY(calc(-14 * var(--px))) rotate(calc(var(--r, 0deg) + 1.6deg)); }
+}
+@keyframes drift {
+  0%, 100% { transform: translateX(calc(-30 * var(--px))); }
+  50% { transform: translateX(calc(40 * var(--px))); }
+}
+@keyframes sway {
+  0%, 100% { transform: rotate(-2deg) translateY(0); }
+  50% { transform: rotate(2.5deg) translateY(calc(-10 * var(--px))); }
+}
+.drift { animation: drift 16s ease-in-out infinite; }
+.drift.slow { animation-duration: 24s; animation-direction: reverse; }
+.sway { animation: sway 9s ease-in-out infinite; transform-origin: 50% 70%; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .c, .drift, .sway, .ring, .mq-track, .card.storm .umb { animation: none !important; }
+}

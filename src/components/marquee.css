@@ -1,0 +1,17 @@
+/* ---------- marquee ---------- */
+.mq { overflow: hidden; height: calc(64 * var(--px)); display: flex; align-items: center; background: var(--chip); color: var(--navy); }
+.mq.navy { background: var(--navy); color: var(--chip); }
+.mq-track { display: flex; width: max-content; animation: mq 30s linear infinite; }
+.mq:hover .mq-track { animation-play-state: paused; }
+.mq-group { display: flex; flex: none; align-items: center; gap: calc(35 * var(--px)); padding-right: calc(35 * var(--px)); }
+.mq-item { display: flex; align-items: center; gap: calc(35 * var(--px)); font: 600 calc(22 * var(--px)) / 1 'Belanosima', sans-serif; letter-spacing: calc(0.75 * var(--px)); white-space: nowrap; }
+.mq-umb { position: relative; width: calc(31.8 * var(--px)); height: calc(31.5 * var(--px)); }
+@keyframes mq { to { transform: translateX(-50%); } }
+@media (min-width: 1100px) {
+  .mq { height: calc(112 * var(--px)); }
+  .mq-track { animation-duration: 45s; }
+  .mq-group, .mq-item { gap: calc(64 * var(--px)); }
+  .mq-group { padding-right: calc(64 * var(--px)); }
+  .mq-item { font-size: calc(44 * var(--px)); letter-spacing: calc(1.5 * var(--px)); }
+  .mq-umb { width: calc(57.8 * var(--px)); height: calc(57.3 * var(--px)); }
+}

@@ -1,0 +1,31 @@
+/* ---------- nav ---------- */
+.links { display: none; }
+.links a { position: relative; font-weight: 500; }
+.links a::after { content: ''; position: absolute; left: 0; right: 0; bottom: -6px; height: 2px; border-radius: 2px; background: currentColor; transform: scaleX(0); transform-origin: left; transition: transform 0.4s var(--ease); }
+.links a:hover::after { transform: scaleX(1); }
+@media (min-width: 1100px) { .links { display: flex; gap: calc(48 * var(--px)); font-size: calc(22 * var(--px)); } }
+
+.burger { all: unset; cursor: pointer; display: flex; flex-direction: column; gap: calc(6 * var(--px)); padding: 10px; margin: -10px; }
+.burger i { display: block; width: calc(26 * var(--px)); height: 3px; border-radius: 2px; background: var(--navy); transition: transform 0.3s var(--ease); }
+.burger:hover i:nth-child(2) { transform: translateX(-5px); }
+@media (min-width: 1100px) { .burger { display: none; } }
+
+.stick {
+  position: fixed; z-index: 40; top: 10px; left: 50%; translate: -50% 0;
+  width: min(calc(100% - 20px), 1100px);
+  display: flex; align-items: center; justify-content: space-between; gap: 20px;
+  padding: 8px 18px 8px 22px; border-radius: 100px;
+  background: rgba(255, 255, 255, 0.78); backdrop-filter: blur(16px) saturate(1.4); -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  box-shadow: 0 10px 40px rgba(0, 79, 126, 0.16);
+}
+.stick .logo { --px: 0.42px; }
+.stick .links { font-size: 16px; gap: 32px; }
+.stick .btn.small { display: none; }
+@media (min-width: 1100px) { .stick .btn.small { display: inline-flex; } .stick .burger { display: none; } }
+
+.menu { position: fixed; inset: 0; z-index: 60; background: var(--navy); color: #fff; display: grid; place-items: center; }
+.menu nav { display: flex; flex-direction: column; align-items: center; gap: 22px; font: 600 40px 'Belanosima', sans-serif; }
+.menu nav .btn { margin-top: 18px; font: 600 18px 'Inter Variable', sans-serif; background: #fff; color: var(--navy); }
+.menu .close { all: unset; cursor: pointer; position: absolute; top: 24px; right: 24px; width: 44px; height: 44px; }
+.menu .close i { position: absolute; left: 8px; top: 21px; width: 28px; height: 3px; border-radius: 2px; background: #fff; rotate: 45deg; }
+.menu .close i + i { rotate: -45deg; }

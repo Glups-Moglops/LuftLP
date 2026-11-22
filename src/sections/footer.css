@@ -1,0 +1,29 @@
+/* ---------- footer ---------- */
+.foot { padding: 0 calc(12 * var(--px)) calc(24 * var(--px)); }
+.foot-card { background: var(--tint); border-radius: calc(40 * var(--px)); padding: calc(28 * var(--px)); display: flex; flex-direction: column; gap: calc(20 * var(--px)); }
+.brand p { margin-top: calc(10 * var(--px)); font: 600 calc(22 * var(--px)) / calc(25 * var(--px)) 'Belanosima', sans-serif; }
+.brand .logo { --px: calc(var(--u) * 0.8); }
+.foot-links { display: flex; flex-wrap: wrap; gap: calc(10 * var(--px)) calc(22 * var(--px)); font-weight: 500; font-size: calc(18 * var(--px)); }
+.foot-links a:hover { text-decoration: underline; text-underline-offset: 5px; }
+.early h2 { font-size: calc(26 * var(--px)); line-height: calc(30 * var(--px)); }
+.signup { position: relative; margin-top: calc(16 * var(--px)); display: flex; flex-direction: column; gap: calc(16 * var(--px)); }
+.signup input { border: 2px solid transparent; background: #fff; border-radius: 100px; padding: calc(18 * var(--px)) calc(26 * var(--px)); font-size: calc(17 * var(--px)); color: var(--navy); width: 100%; min-width: 0; transition: border-color 0.25s, box-shadow 0.25s; }
+.signup input::placeholder { color: var(--navy); opacity: 0.85; }
+.signup input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 5px rgba(41, 131, 199, 0.2); }
+.signup input, .signup .btn { height: calc(57 * var(--px)); padding-block: 0; }
+.signup .btn { font-size: calc(18 * var(--px)); }
+.msg { position: absolute; top: 100%; left: calc(26 * var(--px)); margin-top: calc(6 * var(--px)); font-size: 15px; }
+@media (min-width: 1100px) {
+  .foot { padding: 0 calc(80 * var(--px)) calc(80 * var(--px)); }
+  .foot-card { flex-direction: row; justify-content: space-between; align-items: flex-start; border-radius: calc(64 * var(--px)); padding: calc(72 * var(--px)) calc(80 * var(--px)); gap: calc(40 * var(--px)); }
+  .brand { text-align: center; }
+  .brand .logo { --px: var(--u); }
+  .brand p { margin-top: calc(10 * var(--px)); font-size: calc(24 * var(--px)); line-height: calc(27 * var(--px)); }
+  .foot-links { flex-direction: column; flex-wrap: nowrap; gap: calc(16 * var(--px)); font-size: calc(22 * var(--px)); }
+  .early h2 { font-size: calc(32 * var(--px)); line-height: calc(36 * var(--px)); }
+  .signup { display: grid; grid-template-columns: calc(340 * var(--px)) auto; gap: calc(12 * var(--px)); margin-top: calc(20 * var(--px)); }
+  .signup input { font-size: calc(20 * var(--px)); padding: calc(20 * var(--px)) calc(28 * var(--px)); }
+  .signup .btn { font-size: calc(20 * var(--px)); padding: calc(20 * var(--px)) calc(36 * var(--px)); }
+  .signup input, .signup .btn { height: calc(64 * var(--px)); }
+  .msg { left: calc(28 * var(--px)); margin-top: calc(8 * var(--px)); }
+}

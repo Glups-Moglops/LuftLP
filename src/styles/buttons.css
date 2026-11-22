@@ -1,0 +1,14 @@
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  border: 0; cursor: pointer; border-radius: 100px;
+  background: var(--navy); color: #fff; font-weight: 600;
+  font-size: calc(22 * var(--px)); padding: calc(22 * var(--px)) calc(32 * var(--px));
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease), background 0.2s;
+}
+@media (min-width: 1100px) { .btn { padding-inline: calc(40 * var(--px)); } }
+.btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 14px 30px rgba(0, 79, 126, 0.28); }
+.btn:active { transform: translateY(0) scale(0.98); }
+.btn.light { background: #fff; color: var(--navy); }
+.btn.small { font-size: 15px; padding: 11px 20px; }
+.btn:disabled { opacity: 0.6; cursor: default; transform: none; box-shadow: none; }

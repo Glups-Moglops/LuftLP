@@ -1,0 +1,22 @@
+/* ---------- creators ---------- */
+.creators { background: var(--screen); padding: calc(40 * var(--px)) calc(20 * var(--px)) calc(40 * var(--px)); display: flex; flex-direction: column; gap: calc(18 * var(--px)); }
+.cre-copy h2 { font-size: calc(38 * var(--px)); line-height: calc(40 * var(--px)); }
+.cre-copy p { margin-top: calc(18 * var(--px)); font-size: calc(16 * var(--px)); line-height: calc(24 * var(--px)); }
+.cre-copy .btn { display: flex; margin-top: calc(18 * var(--px)); }
+.tilt-art { --px: calc(var(--u) * 0.3772); position: relative; align-self: center; width: calc(760 * var(--px)); height: calc(900 * var(--px)); }
+.tilt-art .c { left: calc(var(--cx) * var(--px)); top: calc(var(--cy) * var(--px)); }
+.pc { position: relative; overflow: hidden; }
+.pc img { width: 100%; height: 100%; object-fit: cover; }
+.pc.a1 { width: calc(430 * var(--px)); height: calc(600 * var(--px)); border-radius: calc(56 * var(--px)); }
+.pc.a2 { width: calc(300 * var(--px)); height: calc(420 * var(--px)); border-radius: calc(44 * var(--px)); }
+.pc.a3 { width: calc(400 * var(--px)); height: calc(867 * var(--px)); border-radius: calc(44 * var(--px)); background: linear-gradient(180deg, var(--chip), #fff 85%); box-shadow: 0 calc(24 * var(--px)) calc(48 * var(--px)) rgba(0, 51, 89, 0.25); }
+.pc.a3 p { position: absolute; left: 50%; top: calc(72 * var(--px)); translate: -50% 0; width: calc(305 * var(--px)); text-align: center; font: 600 calc(33 * var(--px)) / calc(35 * var(--px)) 'Belanosima', sans-serif; letter-spacing: 0.012em; color: var(--ink); }
+.pc.a3 img { position: absolute; left: calc(17 * var(--px)); top: calc(176 * var(--px)); width: calc(366 * var(--px)); height: auto; object-fit: initial; }
+@media (min-width: 1100px) {
+  .creators { flex-direction: row; align-items: center; gap: calc(60 * var(--px)); padding: calc(130 * var(--px)) calc(120 * var(--px)) calc(130 * var(--px)) calc(160 * var(--px)); }
+  .cre-copy { flex: 1; min-width: 0; }
+  .cre-copy h2 { font-size: calc(100 * var(--px)); line-height: calc(102 * var(--px)); }
+  .cre-copy p { margin-top: calc(44 * var(--px)); font-size: calc(26 * var(--px)); line-height: calc(40 * var(--px)); }
+  .cre-copy .btn { display: inline-flex; margin-top: calc(44 * var(--px)); }
+  .tilt-art { --px: var(--u); flex: none; align-self: auto; }
+}

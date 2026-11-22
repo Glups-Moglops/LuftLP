@@ -1,0 +1,8 @@
+/* App Store badge: used in the hero and the closing call to action */
+.badge img { width: 100%; height: 100%; object-fit: cover; }
+.badge { transition: transform 0.4s var(--ease), filter 0.4s; }
+.badge:hover { transform: translateY(-4px) scale(1.04); filter: drop-shadow(0 12px 22px rgba(0, 51, 89, 0.3)); }
+
+.cta .badge img { transition: transform 0.4s var(--ease); }
+.cta .badge a { display: block; width: 100%; height: 100%; }
+.cta .badge a:hover img { transform: scale(1.05); }

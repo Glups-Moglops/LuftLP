@@ -1,0 +1,16 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="1072" height="372" viewBox="0 0 1072 372" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Cloud" filter="url(#filter0_f_0_18)">
+<ellipse cx="536" cy="186" rx="500" ry="150" fill="url(#paint0_linear_0_18)"/>
+</g>
+<defs>
+<filter id="filter0_f_0_18" x="0" y="0" width="1072" height="372" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="18" result="effect1_foregroundBlur_0_18"/>
+</filter>
+<linearGradient id="paint0_linear_0_18" x1="553.413" y1="99.5593" x2="467.847" y2="475.038" gradientUnits="userSpaceOnUse">
+<stop stop-color="white"/>
+<stop offset="1" stop-color="#E8F9FF"/>
+</linearGradient>
+</defs>
+</svg>

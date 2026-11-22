@@ -1,0 +1,6 @@
+.rail { display: flex; gap: calc(12 * var(--px)); overflow-x: auto; scroll-snap-type: x mandatory; padding-inline: calc(16 * var(--px)); scrollbar-width: none; overscroll-behavior-x: contain; }
+.rail::-webkit-scrollbar { display: none; }
+.rail > * { flex: none; scroll-snap-align: center; }
+.dots { display: flex; justify-content: center; gap: 8px; margin-top: calc(14 * var(--px)); }
+.dots button { all: unset; cursor: pointer; width: 8px; height: 8px; border-radius: 8px; background: rgba(255, 255, 255, 0.4); transition: width 0.4s var(--ease), background 0.3s; }
+.dots button.on { width: 24px; background: #fff; }

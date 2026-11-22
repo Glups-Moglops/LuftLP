@@ -1,0 +1,23 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="92" height="92" viewBox="0 0 92 92" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 7">
+<rect id="Rectangle 48" width="92" height="92" rx="13.9043" fill="url(#paint0_linear_0_72)"/>
+<g id="Vector" filter="url(#filter0_g_0_72)">
+<path d="M77.9063 36.9158C73.5849 23.7077 60.9432 14.1463 46.0212 14.1463C31.0991 14.1463 18.4575 24.8321 14.136 38.0402C16.4272 34.6963 20.3234 32.4954 24.7444 32.4954C29.0806 32.4954 32.9119 34.6126 35.2191 37.8489C37.5264 34.6126 41.3577 32.4954 45.6939 32.4954C50.0713 32.4954 53.9214 34.631 56.2212 37.9196L56.2217 38.3601L56.234 50.5832L56.234 69.3649C56.234 73.3542 54.923 77.4347 47.3865 77.4347C42.1115 77.4347 38.4751 73.2583 38.4751 67.4889M30.1069 45.9801C30.1069 48.8992 32.6533 51.2655 35.7945 51.2655C38.9357 51.2655 41.4821 48.8992 41.4821 45.9801" stroke-width="3.85513" stroke-linecap="round" stroke="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_g_0_72" x="11.1635" y="11.0782" width="69.8114" height="69.4245" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feTurbulence type="fractalNoise" baseFrequency="0.99900001287460327 0.99900001287460327" numOctaves="3" seed="1974" />
+<feDisplacementMap in="shape" scale="2.2809526920318604" xChannelSelector="R" yChannelSelector="G" result="displacedImage" width="100%" height="100%" />
+<feMerge result="effect1_texture_0_72">
+<feMergeNode in="displacedImage"/>
+</feMerge>
+</filter>
+<linearGradient id="paint0_linear_0_72" x1="4.40302" y1="4.52913" x2="94.665" y2="102.554" gradientUnits="userSpaceOnUse">
+<stop stop-color="#044E7B"/>
+<stop offset="1" stop-color="#91D1FE"/>
+</linearGradient>
+</defs>
+</svg>
